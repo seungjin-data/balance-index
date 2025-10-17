@@ -1,0 +1,18 @@
+# Normalize line endings for text files
+* text=auto
+
+# Treat common binary artifacts as binary (no EOL conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+
+# Keep HTML/TSX/CSV as text so diffs remain useful
+*.html text
+*.tsx text
+*.csv text
+*.md  text
