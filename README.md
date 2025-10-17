@@ -1,5 +1,8 @@
 # Balance Index (aligned with Manuscript v2)
 
+[![DOI](https://zenodo.org/badge/xxxxxx.svg)](https://zenodo.org/badge/latestdoi/xxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 ## At a glance
 - Definition: **BI = |STEM% − HSS%|** (percentage-point difference; no division by 100)
 - Coverage: **138 countries, 2015–2025**
@@ -30,9 +33,8 @@
 5. Versioned snapshot: see **Releases** (e.g., `v2.0.1`).
 
 ## How to cite
-- Kim, SeungJin (2025). Balance Index (BI) — Data & Code aligned with Manuscript v2. Version v2.0.1. GitHub: https://github.com/seungjin-data/balance-index
-- DOI: to be added (Zenodo)
-- Please also cite the journal manuscript (Manuscript v2, under review).
+-DOI: https://doi.org/10.5281/zenodo.XXXXXXX
+
 
 ## Figures (preview)
 
