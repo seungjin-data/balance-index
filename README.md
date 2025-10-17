@@ -1,7 +1,6 @@
 # Balance Index (aligned with Manuscript v2)
 
-[![DOI](https://zenodo.org/badge/xxxxxx.svg)](https://zenodo.org/badge/latestdoi/xxxxxx)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17380841.svg)](https://doi.org/10.5281/zenodo.17380841)
 
 ## At a glance
 - Definition: **BI = |STEM% − HSS%|** (percentage-point difference; no division by 100)
@@ -33,7 +32,8 @@
 5. Versioned snapshot: see **Releases** (e.g., `v2.0.1`).
 
 ## How to cite
--DOI: https://doi.org/10.5281/zenodo.XXXXXXX
+
+DOI: https://doi.org/10.5281/zenodo.17380841
 
 
 ## Figures (preview)
