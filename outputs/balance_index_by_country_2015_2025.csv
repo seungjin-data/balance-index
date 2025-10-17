@@ -1,0 +1,11 @@
+country,iso3,year,BI,region,income_group,source
+Grenada,GRD,2023,0.001,Americas,Upper-middle,Manuscript v2
+Luxembourg,LUX,2023,0.001,Europe,High,Manuscript v2
+North Macedonia,MKD,2023,0.003,Europe,Upper-middle,Manuscript v2
+Kyrgyzstan,KGZ,2023,0.003,Asia,Lower-middle,Manuscript v2
+Belize,BLZ,2023,0.006,Americas,Upper-middle,Manuscript v2
+Norway,NOR,2023,0.006,Europe,High,Manuscript v2
+Bangladesh,BGD,2023,0.557,Asia,Lower-middle,Manuscript v2
+Myanmar,MMR,2023,0.334,Asia,Lower-middle,Manuscript v2
+Sudan,SDN,2023,0.322,Africa,Lower-middle,Manuscript v2
+Mauritania,MRT,2023,0.285,Africa,Lower-middle,Manuscript v2
