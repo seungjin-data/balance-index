@@ -28,3 +28,9 @@
 3. Core outputs: `outputs/core_metrics.json` (final stats), `balance_index_by_country_2015_2025.csv` (sample rankings), `panel_final.csv` (schema).
 4. All numbers align 1:1 with **Manuscript v2** (journal submission).
 5. Versioned snapshot: see **Releases** (e.g., `v2.0.1`).
+
+## How to cite
+- Kim, SeungJin (2025). Balance Index (BI) — Data & Code aligned with Manuscript v2. Version v2.0.1. GitHub: https://github.com/seungjin-data/balance-index
+- DOI: to be added (Zenodo)
+- Please also cite the journal manuscript (Manuscript v2, under review).
+
