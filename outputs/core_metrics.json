@@ -1,0 +1,27 @@
+{
+  "definition": "BI = |STEM% - HSS%| (percentage-point difference; no division by 100)",
+  "coverage": { "countries": 138, "years": "2015–2025" },
+  "bi_stats": { "mean": 0.080, "sd": 0.089, "min": 0.001, "max": 0.557 },
+  "employment_link": { "r": -0.72, "p_value": "<0.001", "r2": 0.518, "n": 92 },
+  "balance_categories": [
+    { "label": "Optimal", "range": "<0.05" },
+    { "label": "Moderate", "range": "0.05–0.15" },
+    { "label": "High", "range": "0.15–0.30" },
+    { "label": "Severe", "range": "≥0.30" }
+  ],
+  "examples_top_balance": [
+    {"country": "Grenada", "bi": 0.001},
+    {"country": "Luxembourg", "bi": 0.001},
+    {"country": "North Macedonia", "bi": 0.003},
+    {"country": "Kyrgyzstan", "bi": 0.003},
+    {"country": "Belize", "bi": 0.006},
+    {"country": "Norway", "bi": 0.006}
+  ],
+  "examples_most_imbalanced": [
+    {"country": "Bangladesh", "bi": 0.557},
+    {"country": "Myanmar", "bi": 0.334},
+    {"country": "Sudan", "bi": 0.322},
+    {"country": "Mauritania", "bi": 0.285}
+  ],
+  "source_alignment": "Manuscript v2 (journal submission)"
+}
