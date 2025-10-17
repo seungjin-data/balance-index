@@ -34,3 +34,17 @@
 - DOI: to be added (Zenodo)
 - Please also cite the journal manuscript (Manuscript v2, under review).
 
+## Figures (preview)
+
+**Figure 1 — World Map (BI categories)**  
+![](results/figures/Figure_1_WorldMap.png)
+
+**Figure 2 — BI vs Employment**  
+![](results/figures/Figure_2_BI_vs_Employment.png)
+
+**Figure 3 — Balance by Category**  
+![](results/figures/Figure_3_BI_Category.png)
+
+**Figure 4 — ROC Curve**  
+![](results/figures/Figure_4_ROC.png)
+
