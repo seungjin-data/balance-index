@@ -21,3 +21,10 @@
 1) Export Figures to PNG(300 dpi) → `results/figures/`
 2) Add data outputs: `outputs/panel_final.csv`, `outputs/balance_index_by_country_2015_2025.csv`, `outputs/core_metrics.json`
 3) Tag release `v2.0.0` and link Zenodo DOI
+
+## How to reproduce (quick)
+1. Open the manuscript and tables: `paper/hssc_v2/`, `results/tables/`, `supplementary/`.
+2. See figure sources: `results/figures/src/` (HTML/TSX). Export to PNG (300 dpi) and place in `results/figures/`.
+3. Core outputs: `outputs/core_metrics.json` (final stats), `balance_index_by_country_2015_2025.csv` (sample rankings), `panel_final.csv` (schema).
+4. All numbers align 1:1 with **Manuscript v2** (journal submission).
+5. Versioned snapshot: see **Releases** (e.g., `v2.0.1`).
