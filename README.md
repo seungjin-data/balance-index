@@ -50,3 +50,6 @@ DOI: https://doi.org/10.5281/zenodo.17380841
 **Figure 4 — ROC Curve**  
 ![](results/figures/Figure_4_ROC.png)
 
+### Legacy pipeline (for backward compatibility)
+Run:
+`python analysis/bi_compute.py` → writes `outputs/derived/balance_index_complete.csv`, `panel_with_bi.csv`, `bi_summary.json`.
