@@ -53,3 +53,8 @@ DOI: https://doi.org/10.5281/zenodo.17380841
 ### Legacy pipeline (for backward compatibility)
 Run:
 `python analysis/bi_compute.py` → writes `outputs/derived/balance_index_complete.csv`, `panel_with_bi.csv`, `bi_summary.json`.
+
+### Reproduce (legacy)
+Run:
+`python analysis/bi_compute.py` → writes `outputs/derived/{panel_with_bi.csv, balance_index_complete.csv, bi_summary.json}`
+
