@@ -1,1 +1,4 @@
 iso3,country,year,p_STEM,p_HSS,p_OTHER,BI,emp_25_34,unemp_25_34,neet_15_29,gdp_pc_ppp,internet_users_pct,broadband_subs,region,income_group,source
+KOR,South Korea,2020,41.2,32.0,,73.5,,,,,,,,
+USA,United States,2020,36.0,37.5,,76.2,,,,,,,,
+JPN,Japan,2020,44.0,28.0,,80.1,,,,,,,,
