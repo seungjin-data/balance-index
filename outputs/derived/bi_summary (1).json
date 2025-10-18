@@ -1,0 +1,21 @@
+{
+  "bi_mean": 0.08900000000000001,
+  "bi_sd": 0.07254653678846425,
+  "bi_min": 0.015000000000000013,
+  "bi_max": 0.15999999999999998,
+  "n_countries": 3,
+  "category_cuts": [
+    0.05,
+    0.15,
+    0.3
+  ],
+  "category_labels": [
+    "Optimal",
+    "Moderate",
+    "High",
+    "Severe"
+  ],
+  "employment_r": 0.5583273778668307,
+  "employment_r2": 0.3117294608756508,
+  "employment_n": 3
+}

@@ -1,0 +1,4 @@
+iso3,country,year,p_STEM,p_HSS,p_OTHER,BI,emp_25_34,unemp_25_34,neet_15_29,gdp_pc_ppp,internet_users_pct,broadband_subs,region,income_group,source,p_STEM_norm,p_HSS_norm,balance_category
+KOR,South Korea,2020,41.2,32.0,,0.09200000000000003,73.5,3.8,7.9,44810,96.2,44.1,Asia,High income,demo,0.41200000000000003,0.32,Moderate
+USA,United States,2020,36.0,37.5,,0.015000000000000013,76.2,4.9,9.5,69000,92.0,36.6,North America,High income,demo,0.36,0.375,Optimal
+JPN,Japan,2020,44.0,28.0,,0.15999999999999998,80.1,2.8,5.1,42500,93.5,41.2,Asia,High income,demo,0.44,0.28,High
