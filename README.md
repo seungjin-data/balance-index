@@ -1,6 +1,7 @@
 # Balance Index (aligned with Manuscript v2)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17380841.svg)](https://doi.org/10.5281/zenodo.17380841)
+Archived data snapshot (v2.0.1): see `data/archive/zenodo_v2.0.1/` (DOI: https://doi.org/10.5281/zenodo.17380841).
 
 ## At a glance
 - Definition: **BI = |STEM% − HSS%|** (percentage-point difference; no division by 100)
