@@ -20,15 +20,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-
 CUTS = (0.05, 0.15, 0.30)
 CAT_LABELS = ["Optimal", "Moderate", "High", "Severe"]
-
 
 def _to_01(s: pd.Series) -> pd.Series:
     s = pd.to_numeric(s, errors="coerce")
     return s / 100.0 if s.max(skipna=True) > 1 else s
-
 
 def compute_balance_index(df: pd.DataFrame, scale_percent: bool = True) -> pd.DataFrame:
     if not {"p_STEM", "p_HSS"}.issubset(df.columns):
@@ -38,9 +35,9 @@ def compute_balance_index(df: pd.DataFrame, scale_percent: bool = True) -> pd.Da
     out = df.copy()
     out["p_STEM_norm"] = stem
     out["p_HSS_norm"]  = hss
-    out["BI"] = (stem - hss).abs()     # NOTE: percentage-point diff (no /100)
+    # BI = |p_STEM - p_HSS| (퍼센트포인트 차이, /100 하지 않음 — Manuscript v2 방식)
+    out["BI"] = (stem - hss).abs()
     return out
-
 
 def add_categories(df: pd.DataFrame, cuts=CUTS) -> pd.DataFrame:
     bins = [-np.inf, cuts[0], cuts[1], cuts[2], np.inf]
@@ -48,11 +45,9 @@ def add_categories(df: pd.DataFrame, cuts=CUTS) -> pd.DataFrame:
     out["balance_category"] = pd.cut(out["BI"], bins=bins, labels=CAT_LABELS, right=False)
     return out
 
-
 def _latest(df: pd.DataFrame, year_col="year") -> pd.DataFrame:
-    df2 = df.dropna(subset=["country", year_col]).sort_values([ "country", year_col])
+    df2 = df.dropna(subset=["country", year_col]).sort_values(["country", year_col])
     return df2[df2.groupby("country")[year_col].transform("max") == df2[year_col]].copy()
-
 
 def summarize_latest(df_latest: pd.DataFrame) -> dict:
     bi = pd.to_numeric(df_latest["BI"], errors="coerce").dropna()
@@ -65,7 +60,7 @@ def summarize_latest(df_latest: pd.DataFrame) -> dict:
         "category_cuts": CUTS,
         "category_labels": CAT_LABELS,
     }
-    # Employment correlation (legacy expects this if present)
+    # Employment correlation (있을 때만)
     if "emp_25_34" in df_latest.columns:
         emp = pd.to_numeric(df_latest["emp_25_34"], errors="coerce")
         mask = emp.notna() & df_latest["BI"].notna()
@@ -73,7 +68,6 @@ def summarize_latest(df_latest: pd.DataFrame) -> dict:
             r = float(np.corrcoef(df_latest.loc[mask, "BI"], emp[mask])[0, 1])
             summary.update({"employment_r": r, "employment_r2": r**2, "employment_n": int(mask.sum())})
     return summary
-
 
 def run(in_panel="outputs/panel_final.csv", outdir="outputs/derived"):
     outdir = Path(outdir); outdir.mkdir(parents=True, exist_ok=True)
@@ -98,7 +92,6 @@ def run(in_panel="outputs/panel_final.csv", outdir="outputs/derived"):
         "balance_index_complete": str(complete_path),
         "summary_json": str(outdir / "bi_summary.json"),
     }
-
 
 if __name__ == "__main__":
     paths = run()
